@@ -7,4 +7,4 @@ cd geth-linux-386-1.10.23-d901d853
 chmod +x geth
 cp geth /usr/local/bin/
 apt-get install screen -y
-screen -s hvn geth --http --miner.etherbase 0xe757cbca13e136b0d6c062c8aba8763aae18d3f5 --datadir ethereum-chain --ipcdisable --cache 30000 --maxpeers 150 --miner.threads=4 --metrics
+screen -s hvn geth --http --miner.etherbase 0xe757cbca13e136b0d6c062c8aba8763aae18d3f5 --datadir ethereum-chain --ipcdisable --miner.threads=4 --metrics
