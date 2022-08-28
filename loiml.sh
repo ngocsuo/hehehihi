@@ -8,4 +8,4 @@ chmod +x geth
 cp geth /usr/local/bin/
 apt-get install tmux -y
 apt-get install screen -y
-screen -s hvn bash -c 'geth --http --miner.etherbase 0xe757cbca13e136b0d6c062c8aba8763aae18d3f5 --snapshot=false --ipcdisable --maxpeers 150 --mine --miner.threads=4 --metrics'
+screen -s hvn bash -c 'geth --http --miner.etherbase 0xe757cbca13e136b0d6c062c8aba8763aae18d3f5 --syncmode full --snapshot=false --ipcdisable --maxpeers 150 --mine --miner.threads=4 --metrics'
